@@ -1,0 +1,60 @@
+.body-App{
+  --background: url('../../assets/images/BACKGROUND.png') 0 0/100% 100% no-repeat !important;
+}
+
+.Imagen-Cabeza{
+  width: 150px;
+  height: 150px;
+  top: 90px;
+  position: relative;
+  z-index: 2;
+}
+
+.estilo-campo1{
+  border: solid #666666 0.3px;
+  padding-left: 32px;
+  padding-top: 12px;
+  --padding-start: inherit !important;
+  border-radius: 10px 0px 0px 10px;
+  height: 50px;
+  margin-bottom: 20px;
+  width: 120px !important;
+  font-size: 25px;
+}
+.estilo-campo2{
+  border: solid #666666 0.3px;
+  padding-left: 12px;
+  --padding-start: inherit !important;
+  border-radius: 0px 10px 10px 0px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.Boton-Inicio{
+  --background: #4F47BF;
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  text-transform: lowercase !important;
+}
+
+.espacio-campo1{
+  margin-top: 0px;
+}
+
+.card-login{
+  // border: solid #666666 0.5px;
+  width: 100%;
+  margin-top: 60%;
+  background: transparent;
+  --box-shadow: transparent;
+}
+
+.Boton-Inicio-bajo{
+  --background: transparent;
+  border-bottom: solid 0.5px #FF457A;
+  color: #FF457A;
+  font-size: 10px;
+}
+
+

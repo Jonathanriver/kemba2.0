@@ -1,0 +1,7 @@
+{
+  "name": "Kemba2.0",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

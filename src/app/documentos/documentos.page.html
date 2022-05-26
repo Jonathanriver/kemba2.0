@@ -1,0 +1,141 @@
+<ion-header class="header-Dashboard">
+  <ion-toolbar class="toolbar-dashboard">
+    <!-- <ion-title>Dashboard</ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col col-10 text-center>
+          <img src="../../assets/images/IMAGEN PERFIL CABECERA.png" alt="" class="imagen-header">
+
+        </ion-col>
+        <ion-col col-1>
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <span style="font-size: 15px;font-weight: bold;color: white;margin-bottom: 2px;">MAURICIO TOVAR</span> <br>
+          <span style="font-size: 13px;color: white;">Último ingreso: 19/03/2021</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <a href="#" style="font-size: 13px;color: white;margin-bottom: 2px;">Ver mi perfil</a> <br>
+          <!-- <span style="font-size: 30px;color: white;font-weight: bold;">$3.000.000</span> -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <br>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p style="font-weight: bold;color: #FF457A;border-bottom: solid 0.5px #FF457A;">Documentos del Solicitante
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <span style="font-size: 12px;">Cedula de Ciudadania</span>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <input type="file" class="custom-file-input" style="width: 100%;">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <span style="font-size: 12px;">Comprabantes de Nomina</span>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <input type="file" class="custom-file-input" style="width: 100%;">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <span style="font-size: 12px;">Certificación Laboral</span>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <input type="file" class="custom-file-input" style="width: 100%;">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <span style="font-size: 12px;">Referenciador</span>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <input type="file" class="custom-file-input" style="width: 100%;">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <span style="font-size: 12px;">Referencia Personal 1</span>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <input type="file" class="custom-file-input" style="width: 100%;">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <span style="font-size: 12px;">Referencia Personal 2</span>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <input type="file" class="custom-file-input" style="width: 100%;">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <br>
+          </ion-col>
+          <ion-col size="12">
+            <ion-progress-bar value="0.5"></ion-progress-bar>
+          </ion-col>
+          <ion-col size="12" class="ion-text-center">
+            50%
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="toolbar-footer">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="Historial()">
+          <ion-icon name="list-circle-outline" style="font-size: 23px;color: #FF457A;"></ion-icon>
+          <ion-label style="color: #FF457A;">Historial</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button (click)="Dashboard()">
+          <ion-icon name="home-outline" style="font-size: 23px;color: #FF457A;"></ion-icon>
+          <ion-label style="color: #FF457A;">Home</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button (click)="Notificacion()">
+          <ion-icon name="notifications-outline" style="font-size: 23px;color: #FF457A;"></ion-icon>
+          <ion-label style="color: #FF457A;">Notificación</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

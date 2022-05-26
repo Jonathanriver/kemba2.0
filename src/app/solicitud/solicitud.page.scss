@@ -1,0 +1,63 @@
+.header-Dashboard{
+  height: 230px;
+
+}
+
+.toolbar-dashboard{
+  --background: #4F47BF;
+  border-radius: 0px 0px 26px 26px;
+  box-shadow: 0px 12px #FF457A;
+}
+
+.imagen-header{
+  width: 130px;
+  height: 130px;
+}
+
+.card-dashboard{
+  box-shadow: -7px 5px 1px #FF457A;
+  border-radius: 26px;
+  margin: 17px;
+  border: solid 0.5px silver;
+  --background: #4F47BF;
+}
+
+.imagen-dashboard{
+  width: 120px;
+  height: 87px;
+}
+
+.toolbar-footer{
+  --background: rgb(243, 242, 242);
+}
+
+.Opcion1{
+  border-radius: 26px;
+  background: #4F47BF;
+  height: 120px;
+  box-shadow: -7px 5px 1px #FF457A;
+}
+
+.Opcion2{
+  border-radius: 26px;
+  background: #4F47BF;
+  height: 120px;
+  box-shadow: -7px 5px 1px #FF457A;
+}
+
+
+.card-dashboard{
+  width: 100%;
+  box-shadow: -7px 5px 1px #FF457A;
+  border-radius: 26px;
+  margin: 17px;
+  border: solid 0.5px #4F47BF;
+  --background: transparent;
+}
+
+.campos-register {
+  border: solid 0.5px #4F47BF;
+  border-radius: 26px;
+  padding-left: 12px !important;
+  margin-bottom: 12px;
+}

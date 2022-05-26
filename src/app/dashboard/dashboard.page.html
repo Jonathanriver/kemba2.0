@@ -1,0 +1,96 @@
+<ion-header class="header-Dashboard" lines="none">
+    <ion-toolbar class="toolbar-dashboard" lines="none">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="4" class="ion-text-right">
+                    <ion-icon name="list-circle-outline" class="icono-Menu" (click)="Historial()"></ion-icon>
+                </ion-col>
+                <ion-col size="4" class="ion-text-center">
+                    <img src="../../assets/images/IMAGEN PERFIL CABECERA 2.png" alt="" class="imagen-header">
+                    <span class="nombre-usuarios" (click)="editar()">{{Nombre}} </span><br>
+                </ion-col>
+                <ion-col size="4" class="ion-text-left">
+                    <ion-icon name="notifications-outline" class="icono-Menu" (click)="Notificacion()"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="Fondo-dashboard">
+    <ion-list>
+        <ion-card class="card-dashboard-credikemba" (click)="Credito()">
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-3>
+                            <img src="../../assets/images/Producto1-f.png" alt="" class="imagen-dashboard">
+                        </ion-col>
+                        <ion-col col-9 class="ion-text-center">
+                            <p class="texto-product">
+                                CREDIKEMBA
+                            </p>
+                            <p class="text-descipt-product">
+                                Solicitalo aqui
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        <ion-card class="card-dashboard-ecoahorro">
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-9 class="ion-text-center">
+                            <p class="texto-product">
+                                ECOAHORRO
+                            </p>
+                            <p class="text-descipt-product">
+                                Solicitalo aqui
+                            </p>
+                        </ion-col>
+                        <ion-col col-3 class="ion-text-center">
+                            <img src="../../assets/images/Producto2B.png" alt="" class="imagen-dashboard-rigth">
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+        <ion-card class="card-dashboard-learning" (click)="Productos()">
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-3>
+                            <img src="../../assets/images/Producto3B.png" alt="" class="imagen-dashboard-tamano">
+                        </ion-col>
+                        <ion-col col-9 class="ion-text-center">
+                            <p class="texto-product">
+                                KLEARNING
+                            </p>
+                            <p class="text-descipt-product">
+                                Solicitalo aqui
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+</ion-content>
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <ion-grid>
+            <ion-row>
+                <ion-col class="text-alinena">
+                    <p class="logout">Ayuda</p>
+                </ion-col>
+                <ion-col class="text-alinena-rigth">
+                    <!-- <ion-icon name="log-out-outline" class="salir"></ion-icon> -->
+                    <p class="logout" (click)="Salir()"> Salir</p>
+
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-footer>

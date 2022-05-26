@@ -1,0 +1,43 @@
+<ion-content class="body-App">
+
+  <ion-list style="margin-top: 4%;background-color: transparent;">
+    <div class="ion-text-center">
+      <img src="../../assets/images/LOGO BANKEM.png" alt="" class="Imagen-Cabeza">
+
+      <div class="card-login">
+        <!-- <ion-card-content> -->
+          <div>
+
+            <ion-item lines="none" class="ion-text-center">
+              <p>Por favor ingrese un correo electronico para enviar los pasos para restaurar su contraseña</p>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label class="estilo-campo1 espacio-campo1" position="fixed"><ion-icon name="mail-outline"></ion-icon></ion-label>
+              <ion-input type="email" class="estilo-campo2 espacio-campo1" placeholder="Email"></ion-input>
+            </ion-item>
+
+            <ion-item lines="none">
+              <div class="ion-text-center" style="width: 100%;">
+                <ion-button class="Boton-Inicio" full (click)="Recuperar()">Enviar</ion-button>
+              </div>
+            </ion-item>
+
+            <ion-item lines="none" style="--background: transparent;">
+              <div class="ion-text-center" style="width: 100%;">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="12" class="ion-text-center">
+                      <a class="Boton-Inicio-bajo" (click)="Atras()">Atras</a>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            </ion-item>
+          </div>
+        <!-- </ion-card-content> -->
+      </div>
+    </div>
+  </ion-list>
+
+</ion-content>

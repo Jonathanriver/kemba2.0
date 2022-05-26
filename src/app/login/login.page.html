@@ -1,0 +1,73 @@
+<ion-content class="body-background">
+    <ion-list style="background-color: transparent;">
+        <div class="ion-text-center">
+            <div>
+                <img src="../../assets/images/LogoLogin.png" class="imagenLogoLogin">
+                <ion-card class="card-login">
+                    <ion-card-content>
+                        <!-- <ion-item lines="none" style="--background: transparent;">
+                            <h4 style="font-family: Berlin;font-size: 12px;color: white;">Usuario</h4>
+                        </ion-item> -->
+                        <br>
+                        <br>
+                        <ion-item lines="none" style="--background: transparent;">
+                            <ion-label position="stacked" slot="strat" class="label-user">
+                                Usuario
+                            </ion-label>
+                            <ion-input [(ngModel)]="usuario" class="Campo-user" placeholder="Nombre de usuario" type="text" required></ion-input>
+                            <!-- <ion-icon slot="end" name="person-outline" style="color: white;"></ion-icon> -->
+                        </ion-item>
+                        <ion-item lines="none" style="--background: transparent;">
+                            <ion-label position="stacked" slot="strat" class="label-pass">
+                                Contraseña
+                            </ion-label>
+                            <ion-input [(ngModel)]="password" type="password" class="Campo-pass" placeholder="Password" required></ion-input>
+                            <!-- <ion-icon slot="end" name="key-outline" style="color: white;"></ion-icon> -->
+                        </ion-item>
+                        <!-- <ion-item lines="none" style="--background: transparent;">
+                            <ion-label slot="" style="color: white;font-size: 12px;">Recordar mi usuario
+                            </ion-label>
+                            <ion-checkbox [(ngModel)]="record" slot="start" color="tertiary"></ion-checkbox>
+                        </ion-item> -->
+                        <ion-item lines="none" class="ion-text-center" style="--background: transparent;">
+
+                            <ion-button class="Boton-Inicio-bajo" expand="full" (click)="getPosts()" style="--background: #EC4692 !important;--border-radius: 16px;">Entrar</ion-button>
+                        </ion-item>
+                        <br>
+                        <!-- <ion-item lines="none" style="--background: transparent;" class="ion-text-center">
+                            <div class="ion-text-center">
+                                <a href="registrar" style="text-decoration: none !important;color: white;font-size: 12px;">No tienes cuenta registrate <span style="color: #EC4692;">Aqui!</span></a>
+                            </div>
+                        </ion-item> -->
+                    </ion-card-content>
+                </ion-card>
+                <br>
+                <br>
+                <br>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col class="text-center">
+                            <ion-button (click)="registrar()" fill="outline" class="boton-registrarse">
+                                Registrarse
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+        </div>
+    </ion-list>
+</ion-content>
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <ion-grid>
+            <ion-row>
+                <ion-col class="text-alinena">
+                    <a>Ayuda</a>
+                </ion-col>
+                <ion-col class="text-alinena-rigth">
+                    <a>Kemba</a>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,79 @@
+.imagen-inicial {
+    background: url('../../assets/images/PantallaImagenInicial.png') 0 0/100% 100% no-repeat !important;
+    height: 70%;
+    width: 100%;
+}
+
+.Imagen-Cabeza {
+    width: 202px;
+    height: 94px;
+    top: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.estilo-campo1 {
+    border: solid #666666 0.3px;
+    padding-left: 32px;
+    padding-top: 12px;
+    --padding-start: inherit !important;
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 120px !important;
+}
+
+.estilo-campo2 {
+    border: solid #666666 0.3px;
+    padding-left: 12px;
+    --padding-start: inherit !important;
+    border-radius: 0px 10px 10px 0px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.Boton-Inicio {
+    --background: #4F47BF;
+    height: 60px;
+    width: 60%;
+    font-size: 16px;
+    --border-radius: 16px !important;
+    text-transform: capitalize !important;
+}
+
+.espacio-campo1 {
+    margin-top: 0px;
+}
+
+.card-login {
+    // border: solid #666666 0.5px;
+    // width: 80%;
+    margin-top: 40%;
+    background: #4F47BF;
+    --box-shadow: transparent;
+}
+
+.Boton-Inicio-bajo {
+    --background: #FF2193;
+    height: 60px;
+    width: 60%;
+    font-size: 16px;
+    --border-radius: 16px;
+    text-transform: capitalize !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form {
+    background-color: white;
+}
+
+.text-alinena {
+    text-align: left;
+}
+
+.text-alinena-rigth {
+    text-align: right;
+}

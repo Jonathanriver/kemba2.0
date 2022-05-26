@@ -1,0 +1,78 @@
+.header-Dashboard {
+    height: 140px;
+}
+
+.toolbar-dashboard {
+    --background: transparent;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.imagen-header {
+    width: 100px;
+    height: 100px;
+}
+
+.icono-Menu {
+    color: #4F47BF;
+    font-size: 30px;
+}
+
+.nombre-usuarios {
+    font-size: 12px;
+    color: #4F47BF;
+    text-decoration: underline;
+}
+
+.bodi-fondo {
+    --background: url('../../assets/images/BACKGROUND3.png') 0 0/100% no-repeat !important;
+}
+
+.card-dashboard {
+    // box-shadow: -7px 5px 1px #FF457A;
+    border-radius: 26px;
+    margin: 17px;
+    border: solid 0.5px silver;
+    --background: #828CBF;
+}
+
+.imagen-dashboard {
+    width: 120px;
+    height: 87px;
+}
+
+.toolbar-footer {
+    --background: rgb(243, 242, 242);
+}
+
+.fondo-marca {
+    --background: url('../../assets/images/marcaagua.png') 0 0/100% 100% no-repeat !important;
+}
+
+.texto-simulador {
+    font-family: 'Josefin-ligth' !important;
+}
+
+.campo_valor {
+    border-bottom: solid 2px #4F47BF;
+    font-size: 15px;
+    border: solid 0.5px #4F47BF;
+    border-radius: 10px;
+    padding-left: 10px !important;
+}
+
+.logout {
+    font-size: 15px;
+    color: #4F47BF;
+}
+
+.salir {
+    font-size: 15px;
+}
+
+.text-alinena {
+    text-align: left;
+}
+
+.text-alinena-rigth {
+    text-align: right;
+}

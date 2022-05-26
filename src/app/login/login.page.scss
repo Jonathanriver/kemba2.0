@@ -1,0 +1,67 @@
+.body-background {
+    --background: url('../../assets/images/FondoIcioSesion.png') 0 0/100% 100% no-repeat !important;
+}
+
+.card-login {
+    margin-top: 10%;
+    background: #4F47BF;
+    --box-shadow: transparent;
+}
+
+.Boton-Inicio-bajo {
+    height: 60px;
+    text-transform: capitalize;
+    --border-radius: 16px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.boton-registrarse {
+    font-size: 20px;
+    text-transform: capitalize;
+    height: 60px;
+    color: #4F47BF;
+    // --background: #4F47BF;
+}
+
+.text-alinena {
+    text-align: left;
+}
+
+.text-alinena-rigth {
+    text-align: right;
+}
+
+.imagenLogoLogin {
+    height: 120px;
+}
+
+.Campo-user {
+    font-size: 12px;
+    font-family: 'Josefin-light';
+    color: white;
+    border-bottom: solid 0.5px white;
+}
+
+.label-user {
+    font-family: Berlin;
+    font-size: 12px;
+    color: white;
+}
+
+.label-pass {
+    font-family: Berlin;
+    font-size: 12px;
+    color: white;
+}
+
+.Campo-pass {
+    font-size: 12px;
+    font-family: 'Josefin-light';
+    color: white;
+    border-bottom: solid 0.5px white;
+}

@@ -1,0 +1,115 @@
+<ion-header class="header-Dashboard">
+    <ion-toolbar class="toolbar-dashboard">
+        <!-- <ion-title>Dashboard</ion-title> -->
+        <ion-grid>
+            <ion-row>
+                <ion-col size="4" class="ion-text-center">
+                    <img src="../../assets/images/IMAGEN PERFIL CABECERA.png" alt="" class="imagen-header" (click)="editar()">
+                </ion-col>
+                <ion-col size="8" class="ion-text-left">
+                    <ion-item lines="none" style="--background: transparent;">
+                        <p slot="start" style="font-size: 20px;font-weight: bold;color: white;margin: 26px 0px 0px 0px;text-transform: capitalize;">
+                            {{Nombre}}</p>
+                        <ion-icon style="font-size: 20px;font-weight: bold;color: white;margin: 26px 0px 0px 0px;text-transform: capitalize;" slot="end" name="exit-outline" (click)="Salir()"></ion-icon>
+
+                    </ion-item>
+                    <p style="font-size: 10px;color: white;margin-left:17px;">Último ingreso: 19/03/2021</p>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <br>
+    <ion-item lines="none">
+        <ion-card style="width: 100%;" class="card-dashboard">
+            <ion-card-header class="ion-text-center">
+                <ion-card-title style="color: #4F47BF;">
+                    Solicitud de Credito
+                </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size="12">
+                            <p class="ion-text-center">¿Cuánto dinero necesitas?</p>
+                        </ion-col>
+                        <ion-col size="12">
+                            <ion-range min="0" max="150000" color="secondary" [(ngModel)]="Valor">
+                                <ion-label slot="start">$0</ion-label>
+                                <ion-label slot="end">$150.000</ion-label>
+                            </ion-range>
+                        </ion-col>
+                        <ion-col size="12" class="ion-text-center">
+                            <p style="font-size: 15px;margin: 14px;">{{Valor | currency}}</p>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="12">
+                            <p class="ion-text-center">¿Cuántos dias a diferir los pagos?</p>
+                        </ion-col>
+                        <ion-col size="12">
+                            <ion-range min="1" max="30" color="secondary" [(ngModel)]="Dias">
+                                <ion-label slot="start">1</ion-label>
+                                <ion-label slot="end">30</ion-label>
+                            </ion-range>
+                        </ion-col>
+                        <ion-col size="12" class="ion-text-center">
+                            <p style="font-size: 15px;margin: 14px;">{{Dias}} Dias</p>
+                        </ion-col>
+                        <ion-col size="12">
+                            <select style="width: 100%;" placeholder="Multinivel..." [(ngModel)]="Multi">
+                <option selected>
+                  Seleccione
+                </option>
+                <option>
+                  Herbalife
+                </option>
+                <option>
+                  Omnilife
+                </option>
+                <option>
+                  Avon
+                </option>
+                <option>
+                  Marketing Personal
+                </option>
+              </select>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-button style="width: 100%;--background: #4F47BF;" (click)="ResumenSolicitud()">
+                                Solicitar
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+    </ion-item>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+    <ion-toolbar class="toolbar-footer">
+        <ion-tabs>
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button (click)="Historial()">
+                    <ion-icon name="list-circle-outline" style="font-size: 23px;color: #FF457A;"></ion-icon>
+                    <ion-label style="color: #FF457A;">Historial</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button (click)="Dashboard()">
+                    <ion-icon name="home-outline" style="font-size: 23px;color: #FF457A;"></ion-icon>
+                    <ion-label style="color: #FF457A;">Home</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button (click)="Notificacion()">
+                    <ion-icon name="notifications-outline" style="font-size: 23px;color: #FF457A;"></ion-icon>
+                    <ion-label style="color: #FF457A;">Notificación</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+    </ion-toolbar>
+</ion-footer>
